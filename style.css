@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+header
+{
+    position: sticky;
+    top: 0;
+    background: white;
+    height: 110px    ;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+}
+
+
+.rightBox{
+    display: flex;
+    margin: 12px;
+    gap: 150px;
+    font-size: 100vh;
+    
+    cursor: pointer;
+}
+
+
+
+.left img{
+    width: 60px;
+    height: 40px;
+    
+    cursor: pointer;
+}
+.container{
+    margin: 13px 0px;
+    padding: 0 10vw ;
+    margin: auto;
+}
+.containerHeader{
+    padding: 0 10vw;
+    
+    cursor: pointer;
+}
+nav{
+    font-size: 12px;
+    padding-top: 14px;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 12px;
+}
+.section1{
+    background: #f2f2f2;
+    height: 70vh;
+    
+    cursor: pointer;
+}
+.search{
+    width: 34vw;
+    padding: 7px 17px;
+    border: 0.5px ;
+    background: #f7f8fd;
+    border-radius: 10px;
+    height: 45px;
+    margin-top: 25px;
+}
+
+
+
+
+
+/* Style for the images inside the container */
+.image-container img {
+    margin: 15px;
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    object-fit: unset;
+    animation: rotateImages 20s infinite; /* Slow down the animation */
+    opacity: 0; /* Images are hidden by default */
+}
+
+/* Keyframes for rotating images */
+@keyframes rotateImages {
+    0% { opacity: 1; }      
+    20% { opacity: 0; }     
+    21% { opacity: 0; }     
+    40% { opacity: 0; }     
+    41% { opacity: 0; }     
+    60% { opacity: 0; }     
+    61% { opacity: 0; }     
+    80% { opacity: 0; }     
+    81% { opacity: 0; }     
+    100% { opacity: 0; }    
+}
+
+/* Specific animations for each image */
+.image-container img:nth-child(1) {
+    animation-delay: 0s; /* First image appears immediately */
+}
+
+.image-container img:nth-child(2) {
+    animation-delay: 4s; /* Second image appears after 4 seconds */
+}
+
+.image-container img:nth-child(3) {
+    animation-delay: 8s; /* Third image  after 8 seconds */
+}
+
+.image-container img:nth-child(4) {
+    animation-delay: 12s; /* Fourth image  after 12 seconds */
+}
+
+.image-container img:nth-child(5) {
+    animation-delay: 16s; /* Fifth image after 16 seconds */
+}
+
+.animg{
+    width: 100vh;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.section2{
+    width:34vw;
+    padding-left: 100vh;
+    padding: 10px;
+    margin-top: 0.1px;
+    flex-wrap: wrap;
+}   
+
+
+
+.section3{
+    padding-top: 10vh;
+    padding-left: 10px ;
+    gap: 25px;
+    background: #f2f2f2;
+    height: 45vh;
+}
+.section4{
+    padding-left: 100vh;
+    padding: 10px;
+    margin-top: 0.1px;
+    margin-left: 25px;
+    flex-wrap: wrap;
+    gap: 60px;
+    background: #f2f2f2;
+    height: 45vh;
+    cursor: pointer;
+}   
+.section7{
+    padding-left: 100vh;
+    padding: 10px;
+    margin-top: 0.1px;
+    flex-wrap: wrap;
+    gap: 60px;
+    background: #f2f2f2;
+    height: 45vh;
+    margin-left: 25px;
+}
+
+
+
+@media (max-width: 1550px) {
+
+    nav ul li {
+        list-style: none;
+        padding: 0 4px;
+        font-size: 10px;
+    }
+    .containerHeader{
+        padding: 0 2vw;
+    }
+    header{
+        height: 122px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right{
+        flex-direction: column;
+        display: flex;
+        margin: 12px;
+    }
+    .rightBox{
+        display: flex;
+        margin: 12px;;
+    }
+}
+footer{
+    margin-top: 35px;
+}
+.foot-panel2{
+    background-color: #aab5c0;
+    color: black;
+    height:300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px;
+}
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #603c3c;
+}
+.foot-panel3{
+    background-color: #79828a;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    background-image: url("MyntraLOGO.png");
+    background-size:cover ;
+    height: 120px;
+    width: 180px;
+
+}
+.foot-panel4{
+    background-color: #869b9b;
+    color: white;
+    height: 20px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.rightBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for Profile Dropdown */
+.profile {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.icon-wrapper {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-wrapper i {
+    font-size: 24px; /* Adjust size of the icon */
+    margin-bottom: 6px; /* Space between the icon and text */
+}
+
+
+.dropdown-content {
+    display: none;
+    position:absolute ;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 500px; 
+    overflow-y:scroll;  
+}
+
+.profile:hover .dropdown-content {
+    display: block;
+}
+
+/* Style for dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change the color of links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.wishlist i {
+    margin-right: 8px; 
+    vertical-align: middle; 
+}
+
+.wishlist {
+    display: inline-flex;
+    align-items: center;
+}
+
+.bag i {
+    margin-right: 8px; /* Adds space between the icon and the Bag text */
+    vertical-align: middle; /* Aligns the icon with the text */
+}
+
+.bag {
+    display: inline-flex;
+    align-items: center;
+}
+.button{
+    size: 100px;
+    margin-top: 0px;
+}
+.section.button {
+    display: flex; 
+    justify-content: space-around; 
+    padding: 20px;
+}
+.section.button button {
+    background-color: #fe3d3d; 
+    color: white; 
+    border: none; 
+    border-radius: 25px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+.Accessories{
+    width: 1000px;
+    margin-left: 450px;
+    margin-top: 20px;
+    font-size: 100px;
+    background-color: palevioletred;
+    cursor: pointer;
+    border-radius: 45px;
+
+}
+.Accessories:hover{
+    color: aliceblue;
+    background-color: orange;
+}    
